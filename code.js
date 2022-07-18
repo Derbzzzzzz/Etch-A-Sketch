@@ -18,8 +18,14 @@ function setup(){
 
     boxes.forEach(box => {
         box.style.backgroundColor = 'white';
-        box.addEventListener('mouseover', function(){
-        box.style.backgroundColor = 'black';
+        box.addEventListener('mouseover', function(e){
+        if(e.buttons == 1 || e.buttons == 3){
+           box.style.backgroundColor = 'black'; 
+        } 
+        box.addEventListener('click', function(e){
+        box.style.backgroundColor = 'black'; 
+        } )
+        
 })})};
 
 creator(size);
