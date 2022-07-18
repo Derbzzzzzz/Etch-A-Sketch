@@ -1,0 +1,94 @@
+
+.html{
+    height: 100%;
+}
+
+html, body { min-height: 100%; }
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    align-self: stretch;
+    justify-self: stretch;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    font-family: fantasy;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.title{
+    display: flex;
+    font-size: 100px;
+    font-weight: 900;
+    color: #1F2937;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    font-family: fantasy;
+    font-size: 50px;
+    font-weight: 900;
+    color: #1F2937;
+    margin-top: 30px;
+    bottom: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    align-items: center;
+    justify-content: center;
+}
+
+.sizer, .clear{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 40px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.container {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btns{
+    display: flex;
+    gap: 20px;
+}
+
+.container>div {
+    -webkit-box-shadow:inset 0px 0px 0px 1px lightgrey;
+    -moz-box-shadow:inset 0px 0px 0px 1px black;
+    box-shadow:inset 0px 0px 0px 1px lightslategrey;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+  .container>div:hover{
+    background-color: black;
+  }
